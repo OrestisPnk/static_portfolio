@@ -1,0 +1,18 @@
+# Ignore the 'ignore' folder
+ignore/
+
+# Common OS and editor files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Node modules (if applicable)
+node_modules/
+
+# Python cache (if applicable)
+__pycache__/
+*.pyc
+
+# VS Code settings
+.vscode/
