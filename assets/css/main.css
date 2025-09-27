@@ -40,7 +40,7 @@ ol, ul {
 /* Custom styles for intro section */
 #intro h1 {
     text-transform: none;   /* Prevent all capitals */
-    font-size: 1.0em;       /* Adjust as needed */
+    font-size: 1.0em !important;      /* Adjust as needed */
 }
 
 #intro h2 {
@@ -4711,3 +4711,13 @@ input, select, textarea {
 		}
 
 	}
+	/* Center bullets and their text in the featured post */
+.post.featured header.major ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 1.2em;
+}
+.post.featured header.major {
+    text-align: center;
+}
