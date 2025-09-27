@@ -51,6 +51,16 @@ ol, ul {
     font-size: 1.2em;       /* Adjust as needed */
 }
 
+#major h2 {
+    text-transform: none;   /* Prevent all capitals */
+    font-size: 2.2em;       /* Adjust as needed */
+}
+
+#major p {
+    text-transform: none;   /* Prevent all capitals */
+    font-size: 2.2em;       /* Adjust as needed */
+}
+
 blockquote, q {
 	quotes: none;
 }
