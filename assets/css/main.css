@@ -37,6 +37,20 @@ ol, ul {
 	list-style: none;
 }
 
+/* Custom styles for intro section */
+#intro h1 {
+    text-transform: none;   /* Prevent all capitals */
+    font-size: 2.2em;       /* Adjust as needed */
+}
+
+#intro h2 {
+    text-transform: none;   /* Prevent all capitals */
+    font-size: 2.2em;       /* Adjust as needed */
+}
+#intro p {
+    font-size: 1.2em;       /* Adjust as needed */
+}
+
 blockquote, q {
 	quotes: none;
 }
