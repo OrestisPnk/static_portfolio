@@ -38,15 +38,15 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">Υπηρεσίες</a></li>
+							<li class="active"><a href="index.html">Υπηρεσιες</a></li>
 							<li><a href="generic.html">Generic Page</a></li>
 							<li><a href="elements.html">Elements Reference</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
 						</ul>
 					</nav>
 
@@ -226,6 +226,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Set today's date in all elements with class "date"
+				const dateElements = document.querySelectorAll('.date');
+				const today = new Date();
+				const options = { year: 'numeric', month: 'long', day: 'numeric' };
+				dateElements.forEach(el => {
+					el.textContent = today.toLocaleDateString('en-US', options);
+				});
+			</script>
 
 	</body>
 </html>
