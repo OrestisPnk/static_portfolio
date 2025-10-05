@@ -37,11 +37,11 @@
 
 				<!-- Nav -->
 					<nav id="nav">
-						<ul class="links">
+						<!-- <ul class="links">
 							<li class="active"><a href="index.html">Υπηρεσιες</a></li>
 							<li><a href="generic.html">Generic Page</a></li>
 							<li><a href="elements.html">Δικαστικη Γραφολογια</a></li>
-						</ul>
+						</ul> -->
 						<ul class="icons">
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -228,6 +228,12 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
+					// Load nav links from external file
+				fetch('assets/nav-links.html')
+					.then(response => response.text())
+					.then(html => {
+						document.querySelectorAll('ul.links').forEach(el => el.innerHTML = html);
+					});
 				// Set today's date in all elements with class "date"
 				const dateElements = document.querySelectorAll('.date');
 				const today = new Date();
