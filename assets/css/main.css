@@ -40,7 +40,7 @@ ol, ul {
 /* Custom styles for intro section */
 #intro h1 {
     text-transform: none;   /* Prevent all capitals */
-    font-size: 1.8em !important;      /* Adjust as needed */
+    font-size: 2.2em !important;      /* Adjust as needed */
 }
 
 #intro h2 {
