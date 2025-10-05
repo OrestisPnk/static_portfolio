@@ -30,10 +30,8 @@
 						</ul>
 					</div>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Μελίνα Κατσιμπίρη</a>
-					</header>
+				   <!-- Header -->
+					   <div id="header-placeholder"></div>
 
 				<!-- Nav -->
 					<nav id="nav">
@@ -222,21 +220,27 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-					// Load nav links from external file
-				fetch('assets/nav-links.html')
-					.then(response => response.text())
-					.then(html => {
-						document.querySelectorAll('ul.links').forEach(el => el.innerHTML = html);
-					});
-				// Set today's date in all elements with class "date"
-				const dateElements = document.querySelectorAll('.date');
-				const today = new Date();
-				const options = { year: 'numeric', month: 'long', day: 'numeric' };
-				dateElements.forEach(el => {
-					el.textContent = today.toLocaleDateString('en-US', options);
-				});
-			</script>
+			   <script>
+				   // Load shared header
+				   fetch('assets/header.html')
+					   .then(response => response.text())
+					   .then(html => {
+						   document.getElementById('header-placeholder').innerHTML = html;
+					   });
+				   // Load nav links from external file
+				   fetch('assets/nav-links.html')
+					   .then(response => response.text())
+					   .then(html => {
+						   document.querySelectorAll('ul.links').forEach(el => el.innerHTML = html);
+					   });
+				   // Set today's date in all elements with class "date"
+				   const dateElements = document.querySelectorAll('.date');
+				   const today = new Date();
+				   const options = { year: 'numeric', month: 'long', day: 'numeric' };
+				   dateElements.forEach(el => {
+					   el.textContent = today.toLocaleDateString('en-US', options);
+				   });
+			   </script>
 
 	</body>
 </html>
