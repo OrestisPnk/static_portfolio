@@ -1,6 +1,6 @@
 /* Featured post custom text sizes */
 .featured-text-lg {
-	font-size: 1.1em;
+	font-size: 1.3em !important;
 }
 
 .featured-text-md {
