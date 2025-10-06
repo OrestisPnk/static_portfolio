@@ -20,8 +20,9 @@
 
 .centered-heading-with-lines .line {
 	flex: 1;
-	border-top: 2px solid #888;
+	border-top: 3px solid #444;
 	height: 0;
+	min-width: 40px;
 }
 
 .centered-heading-with-lines h2 {
@@ -31,6 +32,7 @@
 	font-size: 2em;
 	text-align: center;
 	background: #fff;
+	text-transform: none !important;
 	/* Optional: matches your page background */
 }
 
