@@ -10,6 +10,30 @@
 	margin: 0.5em 0;
 }
 
+.centered-heading-with-lines {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+	margin: 2em 0 1em 0;
+}
+
+.centered-heading-with-lines .line {
+	flex: 1;
+	border-top: 2px solid #888;
+	height: 0;
+}
+
+.centered-heading-with-lines h2 {
+	margin: 0;
+	padding: 0 0.5em;
+	white-space: nowrap;
+	font-size: 2em;
+	text-align: center;
+	background: #fff;
+	/* Optional: matches your page background */
+}
+
 .box ul li.box-dashed {
 	display: flex;
 	align-items: center;
