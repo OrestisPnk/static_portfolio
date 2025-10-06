@@ -1,22 +1,3 @@
-@media screen and (max-width: 600px) {
-	.centered-heading-with-lines {
-		flex-direction: column;
-		gap: 0.5em;
-		align-items: center;
-	}
-
-	.centered-heading-with-lines .line {
-		min-width: 30px;
-		width: 60%;
-		max-width: 120px;
-	}
-
-	.centered-heading-with-lines h2 {
-		font-size: 1.2em;
-		padding: 0 0.2em;
-	}
-}
-
 /* Center table header text */
 th {
 	text-align: center;
