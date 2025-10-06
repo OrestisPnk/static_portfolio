@@ -565,6 +565,12 @@ print 'It took ' + i + ' iterations to sort the deck.';
 			.then(html => {
 				document.getElementById('intro-placeholder').innerHTML = html;
 			});
+		//Load shared footer
+		fetch('assets/footer.html')
+			.then(response => response.text())
+			.then(html => {
+				document.getElementById('footer-placeholder').outerHTML = html;
+			});
 		// Load nav links from external file
 		fetch('assets/nav-links.html')
 			.then(response => response.text())
