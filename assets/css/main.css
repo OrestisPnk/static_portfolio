@@ -1,6 +1,38 @@
+/* Centered box bullets and dashed line for first item */
+.box ul {
+	list-style-position: inside;
+	text-align: center;
+	padding-left: 0;
+}
+
+.box ul li {
+	display: list-item;
+	margin: 0.5em 0;
+}
+
+.box ul li.box-dashed {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+	list-style: none;
+}
+
+.box-dashed-line {
+	flex: 1;
+	border-top: 2px dashed #888;
+	height: 0;
+}
+
+.box-dashed-text {
+	padding: 0 0.5em;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
 /* Featured post custom text sizes */
 .featured-text-lg {
-	font-size: 1.8em !important;
+	font-size: 2.5em !important;
 }
 
 .featured-text-md {
