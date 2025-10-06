@@ -1,3 +1,8 @@
+/* Center table header text */
+th {
+	text-align: center;
+}
+
 /* Centered box bullets and dashed line for first item */
 .box ul {
 	list-style-position: inside;
