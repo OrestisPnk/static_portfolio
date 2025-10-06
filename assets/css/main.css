@@ -45,7 +45,7 @@ th {
 
 .centered-heading-with-lines .line {
 	flex: 1;
-	border-top: 3px solid #888;
+	border-top: 2px solid #bbb;
 	height: 0;
 	min-width: 40px;
 }
