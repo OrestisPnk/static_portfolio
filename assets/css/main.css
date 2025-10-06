@@ -1,14 +1,14 @@
 /* Featured post custom text sizes */
 .featured-text-lg {
-	font-size: 1em !important;
+	font-size: 1.8em !important;
 }
 
 .featured-text-md {
-	font-size: 1.1em;
+	font-size: 1.1em !important;
 }
 
 .featured-text-p {
-	font-size: 1.15em;
+	font-size: 1.15em !important;
 }
 
 @import url(fontawesome-all.min.css);
