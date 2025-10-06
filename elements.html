@@ -610,10 +610,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 	<script src="assets/js/main.js"></script>
 	<script>
 		// Load shared header
-		fetch('assets/header.html')
+		fetch('assets/intro.html')
 			.then(response => response.text())
 			.then(html => {
-				document.getElementById('header-placeholder').innerHTML = html;
+				document.getElementById('intro-placeholder').innerHTML = html;
 			});
 		// Load nav links from external file
 		fetch('assets/nav-links.html')
