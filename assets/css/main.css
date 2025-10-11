@@ -30,6 +30,7 @@ th {
 	border-top: 2px solid #bbb;
 	height: 0;
 	min-width: 40px;
+	display: block;
 }
 
 .centered-heading-with-lines h2 {
@@ -38,7 +39,7 @@ th {
 	white-space: nowrap;
 	font-size: 2em;
 	text-align: center;
-	background: #fff;
+	background: transparent;
 	text-transform: none !important;
 	/* Optional: matches your page background */
 }
@@ -49,12 +50,16 @@ th {
 		flex-direction: column;
 		gap: 0.5em;
 		align-items: center;
+		margin: 1em 0;
 	}
 
 	.centered-heading-with-lines .line {
 		min-width: 30px;
 		width: 60%;
 		max-width: 120px;
+		flex: 0 0 auto;
+		/* don't stretch vertically when stacked */
+		margin: 0.2em 0;
 	}
 
 	.centered-heading-with-lines h2 {
@@ -62,6 +67,19 @@ th {
 		padding: 0 0.2em;
 		white-space: normal;
 		/* allow wrapping on small screens */
+		max-width: 90vw;
+		overflow-wrap: anywhere;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.centered-heading-with-lines .line {
+		width: 70%;
+		max-width: 140px;
+	}
+
+	.centered-heading-with-lines h2 {
+		font-size: 1.05em;
 	}
 }
 
