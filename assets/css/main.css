@@ -63,7 +63,8 @@ th {
 	}
 
 	.centered-heading-with-lines h2 {
-		font-size: 1.2em;
+		font-size: 1.5em !important;
+		/* match featured heading on mobile */
 		padding: 0 0.2em;
 		white-space: normal;
 		/* allow wrapping on small screens */
@@ -79,7 +80,8 @@ th {
 	}
 
 	.centered-heading-with-lines h2 {
-		font-size: 1.05em;
+		font-size: 1.5em !important;
+		/* keep consistent on very small screens */
 	}
 }
 
