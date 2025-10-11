@@ -3364,6 +3364,17 @@ table tfoot {
 	border-top-color: #eeeeee;
 }
 
+/* Mobile: center table text horizontally and vertically */
+@media screen and (max-width: 980px) {
+
+	table th,
+	table td {
+		text-align: center !important;
+		vertical-align: middle;
+		white-space: normal;
+	}
+}
+
 table.alt tbody tr td {
 	border-color: #eeeeee;
 }
