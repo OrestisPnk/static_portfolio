@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<!--
+    Forensic Graphologist, Melina Amalia Katsimpiri
+-->
+<html lang="en">
+
+<head>
+    <title>Forensic Graphologist</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+    <div id="wrapper" class="fade-in">
+        <div id="intro-placeholder"></div>
+        <nav id="nav">
+            <ul class="links"></ul>
+            <div class="lang-switch">
+                <a href="index.html"><img src="images/flag-gr.png" alt="Greek"
+                        style="height:24px;vertical-align:middle;"></a>
+                <a href="index-en.html"><img src="images/flag-uk.png" alt="English"
+                        style="height:24px;vertical-align:middle;"></a>
+            </div>
+        </nav>
+        <div id="main">
+            <article class="post featured">
+                <header class="major">
+                    <span class="date">October 7, 2025</span>
+                    <h2 class="featured-text-lg" style="text-transform:none;">Specialized Forensic Graphology Services.
+                    </h2>
+                    <ul>
+                        <li class="featured-text-md">Document authenticity examination.</li>
+                        <li class="featured-text-md">Analysis of handwritten texts, signatures, and documents for
+                            authenticity verification.</li>
+                    </ul>
+                </header>
+                <p class="featured-text-p">Handwriting is a unique imprint of our personality and identity. As a
+                    forensic graphologist, I provide specialized analysis and verification services for document
+                    authenticity, aiming to reveal the truth and support justice.</p>
+                <div class="centered-heading-with-lines">
+                    <span class="line"></span>
+                    <h2>Education and Seminars</h2>
+                    <span class="line"></span>
+                </div>
+                <div class="box">
+                    <ul>
+                        <li class="featured-text-md">Certified Forensic Graphologist - Munich</li>
+                        <li class="featured-text-md">Forensic Document Analyst - Maryland, U.S.A</li>
+                        <li class="featured-text-md">7-month Applied Criminology Seminar – Panteion University</li>
+                        <li class="featured-text-md">12-month Psychology Seminar – University of the Aegean</li>
+                        <li class="featured-text-md">Registered in the list of court experts</li>
+                        <li class="featured-text-md">Member of the Hellenic Graphology Institute</li>
+                        <li class="featured-text-md">Participation in conferences and seminars on Forensic and
+                            Analytical Graphology</li>
+                    </ul>
+                </div>
+                <hr />
+            </article>
+        </div>
+        <div id="footer-placeholder"></div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        fetch('assets/intro.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('intro-placeholder').innerHTML = html;
+            });
+        fetch('assets/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-placeholder').outerHTML = html;
+            });
+        fetch('assets/nav-links.html')
+            .then(response => response.text())
+            .then(html => {
+                document.querySelectorAll('ul.links').forEach(el => el.innerHTML = html);
+            });
+        const dateElements = document.querySelectorAll('.date');
+        const today = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        dateElements.forEach(el => {
+            el.textContent = today.toLocaleDateString('en-US', options);
+        });
+    </script>
+</body>
+
+</html>
