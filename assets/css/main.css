@@ -5144,7 +5144,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 /* Desktop-only: add extra space above table wrappers when needed */
 @media screen and (min-width: 981px) {
 	.table-wrapper-desktop-gap {
-		margin-top: 2.5rem;
+		margin-top: 5rem;
 		/* increased desktop gap */
 	}
 }
