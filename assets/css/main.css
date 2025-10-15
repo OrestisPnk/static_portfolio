@@ -5063,6 +5063,19 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	padding-left: 1.2em;
 }
 
+/* Mobile: align featured UL with paragraph indent */
+@media screen and (max-width: 600px) {
+	.post.featured header.major ul {
+		display: block !important;
+		/* stop centering via inline-block */
+		margin: 0 0 0 1.5em !important;
+		/* match .block-indent */
+		padding-left: 1.2em;
+		/* keep bullet spacing */
+		text-align: left;
+	}
+}
+
 .post.featured header.major {
 	text-align: center;
 }
@@ -5131,7 +5144,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 /* Desktop-only: add extra space above table wrappers when needed */
 @media screen and (min-width: 981px) {
 	.table-wrapper-desktop-gap {
-		margin-top: 5rem;
-		/* adjust as desired */
+		margin-top: 2.5rem;
+		/* increased desktop gap */
 	}
 }
