@@ -39,6 +39,16 @@ th {
 	white-space: nowrap;
 	font-size: 2em;
 	text-align: center;
+
+	/* Remove paragraph indent on mobile */
+	.block-indent {
+		margin-left: 0 !important;
+	}
+
+	.first-line-indent {
+		text-indent: 0 !important;
+	}
+
 	background: transparent;
 	text-transform: none !important;
 	/* Optional: matches your page background */
