@@ -5060,3 +5060,64 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 .post.featured header.major {
 	text-align: center;
 }
+
+/* Responsive stacked table for better mobile readability */
+@media screen and (max-width: 768px) {
+
+	/* Opt-in via class to avoid affecting other tables */
+	table.responsive-stacked {
+		display: block;
+		width: 100%;
+		border-collapse: separate;
+		/* avoid odd borders when converting to blocks */
+	}
+
+	table.responsive-stacked thead {
+		/* Hide header row but keep accessible to screen readers */
+		position: absolute;
+		left: -9999px;
+		height: 0;
+		overflow: hidden;
+		width: 1px;
+	}
+
+	table.responsive-stacked tbody,
+	table.responsive-stacked tr,
+	table.responsive-stacked td {
+		display: block;
+		width: 100%;
+	}
+
+	table.responsive-stacked tr {
+		margin: 0 0 1rem 0;
+		padding: 0.75rem 0.9rem;
+		border: 1px solid rgba(160, 160, 160, 0.3);
+		border-radius: 6px;
+		background: transparent;
+		/* follow theme */
+	}
+
+	table.responsive-stacked td {
+		text-align: left !important;
+		/* ensure natural reading flow */
+		padding: 0.2rem 0 !important;
+		/* tighter vertical rhythm */
+		border: 0 !important;
+		/* remove inner borders when stacked */
+		white-space: normal !important;
+		/* allow wrapping */
+		overflow-wrap: anywhere;
+		/* break long words/URLs */
+		word-break: break-word;
+		/* legacy support */
+		hyphens: auto;
+		/* hyphenation based on document language */
+	}
+
+	/* Make the first cell act like a title/label */
+	table.responsive-stacked td:first-child {
+		font-weight: 600;
+		margin-bottom: 0.25rem;
+		color: inherit;
+	}
+}
