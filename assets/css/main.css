@@ -5127,3 +5127,11 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 		color: inherit;
 	}
 }
+
+/* Desktop-only: add extra space above table wrappers when needed */
+@media screen and (min-width: 981px) {
+	.table-wrapper-desktop-gap {
+		margin-top: 1.5rem;
+		/* adjust as desired */
+	}
+}
