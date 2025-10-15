@@ -39,16 +39,6 @@ th {
 	white-space: nowrap;
 	font-size: 2em;
 	text-align: center;
-
-	/* Remove paragraph indent on mobile */
-	.block-indent {
-		margin-left: 0 !important;
-	}
-
-	.first-line-indent {
-		text-indent: 0 !important;
-	}
-
 	background: transparent;
 	text-transform: none !important;
 	/* Optional: matches your page background */
@@ -137,6 +127,24 @@ th {
 .block-indent {
 	margin-left: 1.5em;
 	/* matches first-line indent by default */
+}
+
+/* Remove paragraph indent on mobile */
+@media screen and (max-width: 600px) {
+	.block-indent {
+		margin-left: 0 !important;
+	}
+
+	.first-line-indent {
+		text-indent: 0 !important;
+	}
+
+	/* Align featured list flush-left on mobile to match paragraph */
+	.post.featured header.major ul {
+		margin-left: 0 !important;
+		display: block !important;
+		text-align: left !important;
+	}
 }
 
 @import url(fontawesome-all.min.css);
