@@ -3338,6 +3338,11 @@ table tfoot {
 	border-top: solid 2px;
 }
 
+/* Center table header titles */
+table thead th {
+	text-align: center;
+}
+
 table.alt {
 	border-collapse: separate;
 }
